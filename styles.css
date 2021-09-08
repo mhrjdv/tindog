@@ -8,7 +8,7 @@
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 h1 {
@@ -67,12 +67,26 @@ p {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+@media (max-width: 1023px) {
+#title{
+  text-align: center;
+}
+
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
 }
 
 /* Features Section */
 
 #features {
+  background-color: #ffffff;
   padding: 7% 15%;
+  position: relative;
 }
 
 .feature-box {
@@ -118,11 +132,46 @@ p {
 }
 /* Pricing Section */
 
-#pricing{
+#pricing {
   padding: 100px;
   text-align: center;
 }
 
-.pricing-column{
+.pricing-column {
   padding: 3% 2%;
+}
+
+.card-header:hover{
+ color: #ff4c68;
+}
+
+/* Call to Action Section*/
+#cta{
+background-color: #ff4c68;
+text-align: center;
+color: #ffffff;
+padding: 7% 10%;
+}
+.cta-h3{
+  font-family: "Montserrat";
+  font-weight: 900;
+  padding: 0 10% 3% ;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+.cta-download-btn {
+  margin: 0 1% 0;
+}
+
+/* Footer Section */
+#footer{
+  color: #8f8f8f;
+  text-align: center;
+  padding: 5% 0 3%;
+}
+.footer-icon{
+margin: 20px 10px;
+}
+.footer-icon:hover{
+  color: #ff4c68;
 }
